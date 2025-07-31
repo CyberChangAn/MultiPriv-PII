@@ -10,7 +10,9 @@ The technical report is currently being written, including the specific details 
 <!--toc:start-->
 
 - [🔐MultiPriv: A Multilingual & Multimodal Dataset of PII Entities and Prompts for LLM Privacy Risk Research](#🔐multipriv-a-multilingual-multimodal-dataset-of-pii-entities-and-prompts-for-llm-privacy-risk-research)
+  - [📖 Table of Contents | 目录](#📖-table-of-contents-目录)
   - [📌 Overview | 数据集简介](#📌-overview-数据集简介)
+    - [📊 Dataset Structure | 数据集构成](#📊-dataset-structure-数据集构成)
   - [🎯 Applications | 应用场景](#🎯-applications-应用场景)
   - [🛡️ Privacy & Ethics | 隐私与伦理声明](#🛡️-privacy-ethics-隐私与伦理声明)
   - [📄 License | 使用协议](#📄-license-使用协议)
@@ -34,6 +36,40 @@ This dataset includes:
 - 隐私感知的文本/图像生成任务
 - 大模型中的隐私泄露风险建模与评估
 - Prompt 注入与红队测试等安全性研究
+
+### 📊 Dataset Structure | 数据集构成
+
+The dataset is organized into the following components:
+
+```
+.
+├── LLM
+│   ├── data_person_1000.json
+│   ├── data_person_1000_zh.json
+│   ├── prompt_person_1000.json
+│   └── prompt_person_1000_zh.json
+└── VLM
+    ├── A Biometric information_生物识别信息
+    │   └── ALL_images
+    ├── B Specific identity information_特定身份信息
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── C Medical health information_医疗健康信息
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── D Financial account information_金融账户信息
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── E Travel trajectory information_行踪轨迹信息
+    │   └── ALL_images
+    ├── F Property equipment information_财产设备信息
+    │   └── ALL_images
+    └── H General Identity Information_通用身份信息
+        └── ALL_images
+```
 
 ## 🎯 Applications | 应用场景
 
@@ -81,3 +117,22 @@ For questions, suggestions, or collaboration:
 如有问题或合作意向，请联系：
 
 Email: xtsun@stu.xidian.edu.cn
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
+  />
+</picture>
