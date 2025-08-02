@@ -12,9 +12,14 @@ The technical report is currently being written, including the specific details 
 - [🔐MultiPriv: A Multilingual & Multimodal Dataset of PII Entities and Prompts for LLM Privacy Risk Research](#🔐multipriv-a-multilingual-multimodal-dataset-of-pii-entities-and-prompts-for-llm-privacy-risk-research)
   - [📖 Table of Contents | 目录](#📖-table-of-contents-目录)
   - [📌 Overview | 数据集简介](#📌-overview-数据集简介)
-    - [📊 Dataset Structure | 数据集构成](#📊-dataset-structure-数据集构成)
+  - [📊 Dataset Structure | 数据集构成](#📊-dataset-structure-数据集构成)
+    - [📄 Text](#📄-text)
+    - [🖼️ Image](#🖼️-image)
+  - [🔖 Entity Types](#🔖-entity-types)
   - [🎯 Applications | 应用场景](#🎯-applications-应用场景)
+  - [⚙️ Format Specification](#️-format-specification)
   - [🛡️ Privacy & Ethics | 隐私与伦理声明](#🛡️-privacy-ethics-隐私与伦理声明)
+  - [📊 Statistics](#📊-statistics)
   - [📄 License | 使用协议](#📄-license-使用协议)
   - [📣 Citation](#📣-citation)
   - [📬 Contact | 联系方式](#📬-contact-联系方式)
@@ -30,16 +35,14 @@ This dataset includes:
 - Image samples with visual privacy information (e.g., faces, ID numbers, license plates)
 - Prompt-based user inputs embedding privacy risks, constructed to simulate real-world LLM usage
 
-**MultiPriv** 是一个包含大量 **个人身份识别信息（PII）** 的中英文、多模态隐私数据集，旨在支持以下研究任务：
+**MultiPriv** 是一个包含大量**个人身份识别信息（PII）**的中英文、多模态隐私数据集，旨在支持以下研究任务：
 
 - 文本与图像中的 PII 实体识别
 - 隐私感知的文本/图像生成任务
 - 大模型中的隐私泄露风险建模与评估
 - Prompt 注入与红队测试等安全性研究
 
-### 📊 Dataset Structure | 数据集构成
-
-The dataset is organized into the following components:
+## 📊 Dataset Structure | 数据集构成
 
 ```
 .
@@ -64,12 +67,57 @@ The dataset is organized into the following components:
     │   ├── en_images
     │   └── zh_images
     ├── E Travel trajectory information_行踪轨迹信息
-    │   └── ALL_images
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
     ├── F Property equipment information_财产设备信息
-    │   └── ALL_images
-    └── H General Identity Information_通用身份信息
-        └── ALL_images
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    └── G General Identity Information_通用身份信息
+        ├── ALL_images
+        ├── en_images
+        └── zh_images
 ```
+
+### 📄 Text
+
+- **Languages**: Chinese, English
+- **Formats**: `.jsonl` with each line as a document containing:
+  - `text`: the raw sentence/document
+  - `entities`: a list of entity spans with types and positions
+  - `language`: "zh" or "en"
+
+### 🖼️ Image
+
+- Realistic or synthetic images containing visible personal/private info (e.g., ID cards, faces, license plates).
+- **Languages**: "zh" or "en"
+- **Formats**:`.jpg` and `.png` containing:
+  - `entities`: privacy entities in picture
+  - `language`: "zh" or "en"
+
+## 🔖 Entity Types
+
+| Entity Type   | Description                      | Examples                        |
+| ------------- | -------------------------------- | ------------------------------- |
+| Name          | Full name of a person            | 张三, John Smith                |
+| Phone Number  | Mobile or landline numbers       | 138\*\*\*\*0000, (555) 123-4567 |
+| ID Number     | Chinese ID, passport, etc.       | 5101\***\*\*\*\*\***1234        |
+| Address       | Residential address or locations | 上海市浦东新区, 123 Main St     |
+| Email         | Email addresses                  | example@gmail.com               |
+| License Plate | Vehicle identification           | 川A·12345, CA-123XYZ            |
+| Bank Info     | Card number, account info        | 6222**\*\*\*\***1234            |
+| Facial Info   | Faces in images                  | Detected via bounding boxes     |
+
+| Privacy Type                   | Description                                      | Entities                                                                | Examples(enentities in jpg/png) |
+| ------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------- |
+| Biometric information          | Identifies physiological or behavioral traits    | Facial recognition, fingerprints                                        | 人脸,face                       |
+| Specific Identity information  | Uniquely Identifiable Information                | Name, ID number, phone                                                  | 张三,Alice                      |
+| Medical health information     | Personal health-related data                     | Diseases, medications, hospitals, wards, attending doctors, visit dates | 癌症,cancer                     |
+| Financial Account information  | Information about asset or financial accounts    | Bank card number, transaction history, credit score                     | 123456,234567                   |
+| Travel trajectory information  | Information describing position or movement      | Location data, travel records                                           | 武汉,Janpan                     |
+| Property equipment information | Information related to personal property/devices | Real estate, vehicles, electronic devices                               | NK2345,NK2345                   |
+| General indentity information  | Personal identification details                  | gender, nationality                                                     | 男,man                          |
 
 ## 🎯 Applications | 应用场景
 
@@ -82,6 +130,47 @@ The dataset is organized into the following components:
 | LLM Safety Alignment & Red Teaming       | 对齐训练、攻击模拟与响应拦截    |
 | Privacy-Preserving Text/Image Generation | 支持隐私脱敏的生成系统构建      |
 
+## ⚙️ Format Specification
+
+- **Text**:
+
+  ```json
+  {
+    "text": "My name is John and my phone number is 555-123-4567.",
+    "language": "en",
+    "entities": [
+      {
+        "start": 11,
+        "end": 15,
+        "type": "Name"
+      },
+      {
+        "start": 39,
+        "end": 51,
+        "type": "Phone Number"
+      }
+    ]
+  }
+  ```
+
+- **Image annotations** (example):
+
+  ```json
+  {
+    "image_id": "img001.jpg",
+    "entities": [
+      {
+        "type": "License Plate",
+        "bbox": [120, 80, 200, 50]
+      },
+      {
+        "type": "Face",
+        "bbox": [60, 100, 120, 150]
+      }
+    ]
+  }
+  ```
+
 - ## 🛡️ Privacy & Ethics | 隐私与伦理声明
 
   - All data is **synthetically generated**, **anonymized**, or **legally sourced**.
@@ -91,12 +180,65 @@ The dataset is organized into the following components:
   - Dataset is intended **only for research and safety development**, not for commercial use.
     本数据集仅用于**研究用途与模型安全开发**，禁止商业用途或恶意使用。
 
+## 📊 Statistics
+
+| Modality | Language | # Samples | # Entities |
+| -------- | -------- | --------- | ---------- |
+| Text     | zh       | 5,000     | 12,345     |
+| Text     | en       | 5,000     | 11,234     |
+| Image    | zh       | 405       | 700+       |
+| Image    | en       | 405       | 700+       |
+
 ## 📄 License | 使用协议
 
 Released under the **CC BY-NC-SA 4.0 License**.
 以 **署名-非商业性使用-相同方式共享 4.0 国际许可协议** 发布。
 
 > ✅ You may share and adapt for non-commercial purposes with attribution.
+
+1. **PII External Dataset**  
+   [https://www.kaggle.com/datasets/alejopaullier/pii-external-dataset](https://www.kaggle.com/datasets/alejopaullier/pii-external-dataset)
+
+2. **Medical Data**  
+   [https://www.kaggle.com/datasets/karimnahas/medicaldata](https://www.kaggle.com/datasets/karimnahas/medicaldata)
+
+3. **Healthcare Dataset**  
+   [https://www.kaggle.com/datasets/prasad22/healthcare-dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset)
+
+4. **Bank Customer Churn Dataset**  
+   [https://www.kaggle.com/code/mathchi/churn-problem-for-bank-customer](https://www.kaggle.com/code/mathchi/churn-problem-for-bank-customer)
+
+5. **WIDER FACE Dataset**  
+   [https://huggingface.co/datasets/CUHK-CSE/wider_face](https://huggingface.co/datasets/CUHK-CSE/wider_face)
+
+6. **Open-i Medical Image Dataset**  
+   [https://openi.nlm.nih.gov/](https://openi.nlm.nih.gov/)
+
+7. **Mobile-Captured Pharmaceutical Medication Packages**  
+   [https://universe.roboflow.com/cv-d1oxf/mainland-id-card](https://universe.roboflow.com/cv-d1oxf/mainland-id-card)
+
+8. **Generated USA Passports Dataset**  
+   [https://www.kaggle.com/datasets/tapakah68/generated-usa-passeports-dataset](https://www.kaggle.com/datasets/tapakah68/generated-usa-passeports-dataset)
+
+9. **MultiTrust Dataset**  
+   [https://huggingface.co/datasets/thu-ml/MultiTrust](https://huggingface.co/datasets/thu-ml/MultiTrust)
+
+10. **privacy_detection_dataset_v2**  
+    [https://www.datafountain.cn/competitions/472](https://www.datafountain.cn/competitions/472)
+
+11. **Mainland ID Card Dataset (Roboflow)**  
+    [https://universe.roboflow.com/cv-d1oxf/mainland-id-card](https://universe.roboflow.com/cv-d1oxf/mainland-id-card)
+
+12. **RTVLM Dataset**  
+    @misc{li2024redteamingvisuallanguage,
+    title={Red Teaming Visual Language Models},
+    author={Mukai Li and Lei Li and Yuwei Yin and Masood Ahmed and Zhenguang Liu and Qi Liu},
+    year={2024},
+    eprint={2401.12915},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
+    url={https://arxiv.org/abs/2401.12915},
+    }
 
 ## 📣 Citation
 
@@ -115,7 +257,6 @@ If you use this dataset, please cite:
 
 For questions, suggestions, or collaboration:
 如有问题或合作意向，请联系：
-
 Email: xtsun@stu.xidian.edu.cn
 
 <picture>
