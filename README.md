@@ -200,7 +200,7 @@ This dataset includes:
 
 ![image-20250803090743971](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803090743971.png)
 
-<img src="https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803090841124.png" alt="image-20250803090841124" style="zoom:50%;" />
+![image-20250803091144721](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png)
   ```
 
 - ## 🛡️ Privacy & Ethics | 隐私与伦理声明
@@ -310,4 +310,5 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
