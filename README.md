@@ -99,16 +99,24 @@ This dataset includes:
 
 ## 🔖 Entity Types
 
-| Entity Type   | Description                      | Examples                        |
-| ------------- | -------------------------------- | ------------------------------- |
-| Name          | Full name of a person            | 张三, John Smith                |
-| Phone Number  | Mobile or landline numbers       | 138\*\*\*\*0000, (555) 123-4567 |
-| ID Number     | Chinese ID, passport, etc.       | 5101\***\*\*\*\*\***1234        |
-| Address       | Residential address or locations | 上海市浦东新区, 123 Main St     |
-| Email         | Email addresses                  | example@gmail.com               |
-| License Plate | Vehicle identification           | 川A·12345, CA-123XYZ            |
-| Bank Info     | Card number, account info        | 6222**\*\*\*\***1234            |
-| Facial Info   | Faces in images                  | Detected via bounding boxes     |
+| Category  | Entity Type     | Description                                      | Examples                                |
+|-----------|-----------------|--------------------------------------------------|-----------------------------------------|
+| PERSON    | Name            | Full name of a person（姓名）                    | 张三, John Smith                        |
+| PERSON    | Gender          | Biological sex（性别）                           | 男, 女, Male, Female                    |
+| PERSON    | Age             | Person's age（年龄）                             | 25, 42                                  |
+| PERSON    | Location        | Residential or current location（地址/位置）      | 上海市浦东新区, 123 Main St             |
+| PERSON    | Nationality     | Country of citizenship（国籍）                   | 中国, United States                     |
+| PERSON    | Occupation      | Job or profession（职业）                        | 教师, Software Engineer                 |
+| CODE      | ID Number       | Government-issued ID (身份证、护照等)             | 5101********1234, P1234567             |
+| CONTACT   | Email           | Email address（电子邮箱）                         | example@gmail.com                       |
+| CONTACT   | Phone Number    | Mobile or landline numbers（电话号码）             | 138****0000, (555) 123-4567             |
+| Health    | Symptoms        | Physical or mental symptoms（症状）              | 发烧, 胃痛, cough                        |
+| Health    | Diagnosis       | Medical diagnosis results（诊断结果）            | 肺炎, diabetes                          |
+| MEDIAL    | Medication      | Details of prescribed medicines（用药信息）       | 阿莫西林, ibuprofen                     |
+| MEDIAL    | Doctor Records  | Medical records written by doctors（医生记录）    | 病程记录, CT建议                        |
+| PAYMENT   | Transaction     | Financial transaction details（交易信息）         | ￥300, 支付宝交易记录                   |
+| ASSET     | Credit Score    | Individual credit rating（信用分数）              | 720, 良好                               |
+| ASSET     | Income          | Personal or household income（收入）             | ¥10,000/月, $60,000/year                |
 
 | Privacy Type                   | Description                                      | Entities                                                                | Examples(enentities in jpg/png) |
 | ------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------- |
@@ -205,7 +213,8 @@ This dataset includes:
 <img src="https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png" alt="image-20250803091144721" style="zoom: 33%;" />
   ```
 
-- ## 🛡️ Privacy & Ethics | 隐私与伦理声明
+
+## 🛡️ Privacy & Ethics | 隐私与伦理声明
 
   - All data is **synthetically generated**, **anonymized**, or **legally sourced**.
     所有数据均为**合成生成**、**脱敏处理**或**合法采集**。
@@ -312,6 +321,7 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
 
