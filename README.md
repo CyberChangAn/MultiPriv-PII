@@ -1,8 +1,6 @@
 # 🔐MultiPriv: A Multilingual & Multimodal Dataset of PII Entities and Prompts for LLM Privacy Risk Research
 
-多语言多模态 PII 实体与 Prompt 数据集  —— MultiPriv 数据集（面向大模型的隐私风险研究）
-
-
+多语言多模态 PII 实体与 Prompt 数据集 —— MultiPriv 数据集（面向大模型的隐私风险研究）
 
 The technical report is currently being written, including the specific details of the dataset, model testing, and references to other datasets.
 技术报告正在撰写中，包括数据集具体情况以及模型测试，和对其他数据集的引用。
@@ -28,6 +26,7 @@ In the privacy entity files of Chinese text, there are duplicate name entities. 
   - [📄 License | 使用协议](#📄-license-使用协议)
   - [📣 Citation](#📣-citation)
   - [📬 Contact | 联系方式](#📬-contact-联系方式)
+  - [Star History](#star-history)
   <!--toc:end-->
 
 ## 📌 Overview | 数据集简介
@@ -89,8 +88,7 @@ This dataset includes:
 
 - **Languages**: Chinese, English
 - **Formats**:
-   `.jsonl` with each line as a document containing:
-
+  `.jsonl` with each line as a document containing:
 
 ### 🖼️ Image
 
@@ -101,28 +99,29 @@ This dataset includes:
   - `language`: "zh" or "en"
 
 ## 🔖 Entity Types
-* Definition of text privacy information entities:
- 
-| Category | Entity Type     | Description                                      | Examples                                |
-|----------|-----------------|--------------------------------------------------|-----------------------------------------|
-| PERSON   | Name            | 姓名                                             | 张三, John Smith                        |
-| PERSON   | Gender          | 性别                                             | 男, 女, Male, Female                    |
-| PERSON   | Age             | 年龄                                             | 25, 42                                  |
-| PERSON   | Location        | 地址/位置                                        | 上海市浦东新区, 123 Main St             |
-| PERSON   | Nationality     | 国籍                                             | 中国, United States                     |
-| PERSON   | Occupation      | 职业                                             | 教师, Software Engineer                 |
-| CODE     | ID Number       | 身份证、护照等                                   | 5101********1234, P1234567              |
-| CONTACT  | Email           | 电子邮箱                                         | example@gmail.com                       |
-| CONTACT  | Phone Number    | 电话号码                                         | 138****0000, (555) 123-4567             |
-| Health   | Symptoms        | 症状                                             | 发烧, 胃痛, cough                       |
-| Health   | Diagnosis       | 诊断结果                                         | 肺炎, diabetes                          |
-| MEDIAL   | Medication      | 用药信息                                         | 阿莫西林, ibuprofen                     |
-| MEDIAL   | Doctor Records  | 医生记录                                         | 病程记录, CT建议                        |
-| PAYMENT  | Transaction     | 交易信息                                         | ￥300, 支付宝交易记录                   |
-| ASSET    | Credit Score    | 信用分数                                         | 720, 良好                               |
-| ASSET    | Income          | 收入                                             | ¥10,000/月, $60,000/year                |
 
-* Definition of image privacy information entities:
+- Definition of text privacy information entities:
+
+| Category | Entity Type    | Description    | Examples                        |
+| -------- | -------------- | -------------- | ------------------------------- |
+| PERSON   | Name           | 姓名           | 张三, John Smith                |
+| PERSON   | Gender         | 性别           | 男, 女, Male, Female            |
+| PERSON   | Age            | 年龄           | 25, 42                          |
+| PERSON   | Location       | 地址/位置      | 上海市浦东新区, 123 Main St     |
+| PERSON   | Nationality    | 国籍           | 中国, United States             |
+| PERSON   | Occupation     | 职业           | 教师, Software Engineer         |
+| CODE     | ID Number      | 身份证、护照等 | 5101**\*\*\*\***1234, P1234567  |
+| CONTACT  | Email          | 电子邮箱       | example@gmail.com               |
+| CONTACT  | Phone Number   | 电话号码       | 138\*\*\*\*0000, (555) 123-4567 |
+| Health   | Symptoms       | 症状           | 发烧, 胃痛, cough               |
+| Health   | Diagnosis      | 诊断结果       | 肺炎, diabetes                  |
+| MEDIAL   | Medication     | 用药信息       | 阿莫西林, ibuprofen             |
+| MEDIAL   | Doctor Records | 医生记录       | 病程记录, CT建议                |
+| PAYMENT  | Transaction    | 交易信息       | ￥300, 支付宝交易记录           |
+| ASSET    | Credit Score   | 信用分数       | 720, 良好                       |
+| ASSET    | Income         | 收入           | ¥10,000/月, $60,000/year        |
+
+- Definition of image privacy information entities:
 
 | Privacy Type                   | Description                                      | Entities                                                                | Examples(enentities in jpg/png) |
 | ------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------- |
@@ -219,15 +218,14 @@ This dataset includes:
 <img src="https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png" alt="image-20250803091144721" style="zoom: 33%;" />
   ```
 
-
 ## 🛡️ Privacy & Ethics | 隐私与伦理声明
 
-  - All data is **synthetically generated**, **anonymized**, or **legally sourced**.
-    所有数据均为**合成生成**、**脱敏处理**或**合法采集**。
-  - No real personal identity is exposed.
-    不包含任何真实可识别的身份信息。
-  - Dataset is intended **only for research and safety development**, not for commercial use.
-    本数据集仅用于**研究用途与模型安全开发**，禁止商业用途或恶意使用。
+- All data is **synthetically generated**, **anonymized**, or **legally sourced**.
+  所有数据均为**合成生成**、**脱敏处理**或**合法采集**。
+- No real personal identity is exposed.
+  不包含任何真实可识别的身份信息。
+- Dataset is intended **only for research and safety development**, not for commercial use.
+  本数据集仅用于**研究用途与模型安全开发**，禁止商业用途或恶意使用。
 
 ## 📊 Statistics
 
@@ -246,6 +244,7 @@ Released under the **CC BY-NC-SA 4.0 License**.
 > ✅ You may share and adapt for non-commercial purposes with attribution.
 
 Below are the links to other datasets that we have referred to and referenced=
+
 1. **PII External Dataset**  
    [https://www.kaggle.com/datasets/alejopaullier/pii-external-dataset](https://www.kaggle.com/datasets/alejopaullier/pii-external-dataset)
 
@@ -309,33 +308,6 @@ For questions, suggestions, or collaboration:
 如有问题或合作意向，请联系：
 Email: xtsun@stu.xidian.edu.cn
 
-<picture>
-  <source
-    media="(prefers-color-scheme: dark)"
-    srcset="
-      https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date&theme=dark
-    "
-  />
-  <source
-    media="(prefers-color-scheme: light)"
-    srcset="
-      https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date
-    "
-  />
-  <img
-    alt="Star History Chart"
-    src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
-  />
-</picture>
+## Star History
 
-
-
-
-
-
-
-
-
-
-
-
+[![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv&Date)
