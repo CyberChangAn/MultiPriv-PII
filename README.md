@@ -102,26 +102,28 @@ This dataset includes:
 
 ## 🔖 Entity Types
 * Definition of text privacy information entities:
-| Category  | Entity Type     | Description                                      | Examples                                |
-|-----------|-----------------|--------------------------------------------------|-----------------------------------------|
-| PERSON    | Name            | Full name of a person（姓名）                    | 张三, John Smith                        |
-| PERSON    | Gender          | Biological sex（性别）                           | 男, 女, Male, Female                    |
-| PERSON    | Age             | Person's age（年龄）                             | 25, 42                                  |
-| PERSON    | Location        | Residential or current location（地址/位置）      | 上海市浦东新区, 123 Main St             |
-| PERSON    | Nationality     | Country of citizenship（国籍）                   | 中国, United States                     |
-| PERSON    | Occupation      | Job or profession（职业）                        | 教师, Software Engineer                 |
-| CODE      | ID Number       | Government-issued ID (身份证、护照等)             | 5101********1234, P1234567             |
-| CONTACT   | Email           | Email address（电子邮箱）                         | example@gmail.com                       |
-| CONTACT   | Phone Number    | Mobile or landline numbers（电话号码）             | 138****0000, (555) 123-4567             |
-| Health    | Symptoms        | Physical or mental symptoms（症状）              | 发烧, 胃痛, cough                        |
-| Health    | Diagnosis       | Medical diagnosis results（诊断结果）            | 肺炎, diabetes                          |
-| MEDIAL    | Medication      | Details of prescribed medicines（用药信息）       | 阿莫西林, ibuprofen                     |
-| MEDIAL    | Doctor Records  | Medical records written by doctors（医生记录）    | 病程记录, CT建议                        |
-| PAYMENT   | Transaction     | Financial transaction details（交易信息）         | ￥300, 支付宝交易记录                   |
-| ASSET     | Credit Score    | Individual credit rating（信用分数）              | 720, 良好                               |
-| ASSET     | Income          | Personal or household income（收入）             | ¥10,000/月, $60,000/year                |
+* 
+| Category | Entity Type     | Description                                      | Examples                                |
+|----------|-----------------|--------------------------------------------------|-----------------------------------------|
+| PERSON   | Name            | 姓名                                             | 张三, John Smith                        |
+| PERSON   | Gender          | 性别                                             | 男, 女, Male, Female                    |
+| PERSON   | Age             | 年龄                                             | 25, 42                                  |
+| PERSON   | Location        | 地址/位置                                        | 上海市浦东新区, 123 Main St             |
+| PERSON   | Nationality     | 国籍                                             | 中国, United States                     |
+| PERSON   | Occupation      | 职业                                             | 教师, Software Engineer                 |
+| CODE     | ID Number       | 身份证、护照等                                   | 5101********1234, P1234567              |
+| CONTACT  | Email           | 电子邮箱                                         | example@gmail.com                       |
+| CONTACT  | Phone Number    | 电话号码                                         | 138****0000, (555) 123-4567             |
+| Health   | Symptoms        | 症状                                             | 发烧, 胃痛, cough                       |
+| Health   | Diagnosis       | 诊断结果                                         | 肺炎, diabetes                          |
+| MEDIAL   | Medication      | 用药信息                                         | 阿莫西林, ibuprofen                     |
+| MEDIAL   | Doctor Records  | 医生记录                                         | 病程记录, CT建议                        |
+| PAYMENT  | Transaction     | 交易信息                                         | ￥300, 支付宝交易记录                   |
+| ASSET    | Credit Score    | 信用分数                                         | 720, 良好                               |
+| ASSET    | Income          | 收入                                             | ¥10,000/月, $60,000/year                |
 
-Definition of image privacy information entities:
+* Definition of image privacy information entities:
+
 | Privacy Type                   | Description                                      | Entities                                                                | Examples(enentities in jpg/png) |
 | ------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------- |
 | Biometric information          | Identifies physiological or behavioral traits    | Facial recognition, fingerprints                                        | 人脸,face                       |
@@ -325,6 +327,7 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
 
