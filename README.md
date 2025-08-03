@@ -98,7 +98,7 @@ This dataset includes:
   - `language`: "zh" or "en"
 
 ## 🔖 Entity Types
-
+* Definition of text privacy information entities:
 | Category  | Entity Type     | Description                                      | Examples                                |
 |-----------|-----------------|--------------------------------------------------|-----------------------------------------|
 | PERSON    | Name            | Full name of a person（姓名）                    | 张三, John Smith                        |
@@ -118,6 +118,7 @@ This dataset includes:
 | ASSET     | Credit Score    | Individual credit rating（信用分数）              | 720, 良好                               |
 | ASSET     | Income          | Personal or household income（收入）             | ¥10,000/月, $60,000/year                |
 
+Definition of image privacy information entities:
 | Privacy Type                   | Description                                      | Entities                                                                | Examples(enentities in jpg/png) |
 | ------------------------------ | ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------- |
 | Biometric information          | Identifies physiological or behavioral traits    | Facial recognition, fingerprints                                        | 人脸,face                       |
@@ -321,6 +322,7 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
 
