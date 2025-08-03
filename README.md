@@ -7,6 +7,9 @@
 The technical report is currently being written, including the specific details of the dataset, model testing, and references to other datasets.
 技术报告正在撰写中，包括数据集具体情况以及模型测试，和对其他数据集的引用。
 
+In the privacy entity files of Chinese text, there are duplicate name entities. This might be due to memory issues of LLMs. We will solve this problem in the next version.
+在中文文本隐私实体文件中，姓名实体存在重复，这可能是因为大模型记忆问题，我们会在下个版本解决这个问题。
+
 ## 📖 Table of Contents | 目录
 
 <!--toc:start-->
@@ -322,6 +325,7 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
 
