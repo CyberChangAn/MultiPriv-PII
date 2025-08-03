@@ -1,5 +1,3 @@
-<img width="1031" height="1304" alt="image" src="https://github.com/user-attachments/assets/773ad83d-c26d-4256-bbbb-74e635d7e122" /># 🔐MultiPriv: A Multilingual & Multimodal Dataset of PII Entities and Prompts for LLM Privacy Risk Research
-
 多语言多模态 PII 实体与 Prompt 数据集 —— MultiPriv 数据集（面向大模型的隐私风险研究）
 
 The technical report is currently being written, including the specific details of the dataset, model testing, and references to other datasets.
@@ -200,7 +198,7 @@ This dataset includes:
 
 ![image-20250803090743971](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803090743971.png)
 
-![image-20250803091144721](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png)
+<img src="https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png" alt="image-20250803091144721" style="zoom: 33%;" />
   ```
 
 - ## 🛡️ Privacy & Ethics | 隐私与伦理声明
@@ -310,5 +308,6 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
