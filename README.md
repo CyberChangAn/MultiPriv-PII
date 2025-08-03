@@ -46,35 +46,35 @@ This dataset includes:
 
 ```
 .
-├── LLM
-│   ├── data_person_1000.json
-│   ├── data_person_1000_zh.json
-│   ├── prompt_person_1000.json
-│   └── prompt_person_1000_zh.json
-└── VLM
-    ├── A Biometric information_生物识别信息
-    │   └── ALL_images
-    ├── B Specific identity information_特定身份信息
-    │   ├── ALL_images
-    │   ├── en_images
-    │   └── zh_images
-    ├── C Medical health information_医疗健康信息
-    │   ├── ALL_images
-    │   ├── en_images
-    │   └── zh_images
-    ├── D Financial account information_金融账户信息
-    │   ├── ALL_images
-    │   ├── en_images
-    │   └── zh_images
-    ├── E Travel trajectory information_行踪轨迹信息
-    │   ├── ALL_images
-    │   ├── en_images
-    │   └── zh_images
-    ├── F Property equipment information_财产设备信息
-    │   ├── ALL_images
-    │   ├── en_images
-    │   └── zh_images
-    └── G General Identity Information_通用身份信息
+├── LLM                             # 与大语言模型相关的文本数据（LLM textual data）
+│   ├── data_person_1000.json          # 包含1000条个人信息数据（1,000 personal data records）
+│   ├── data_person_1000_zh.json       # 包含1000条中文个人信息数据（1,000 personal data records in Chinese）
+│   ├── prompt_person_1000.json        # 针对个人数据的英文prompt集合（Prompts in English for personal data）
+│   └── prompt_person_1000_zh.json     # 针对个人数据的中文prompt集合（Prompts in Chinese for personal data）
+└── VLM                             # 与视觉语言模型相关的图像数据（VLM image-based dataset）
+    ├── A Biometric information_生物识别信息               # 生物特征图像（Images of biometrics like face, iris, fingerprint）
+    │   └── ALL_images                                 # 所有语言下的图像合集（All images combined）
+    ├── B Specific identity information_特定身份信息        # 身份凭证图像（Images of passports, ID cards, driver's licenses）
+    │   ├── ALL_images
+    │   ├── en_images                                 # 英文环境下采集图像（Images with English content）
+    │   └── zh_images                                 # 中文环境下采集图像（Images with Chinese content）
+    ├── C Medical health information_医疗健康信息          # 健康信息图像（Images of medical records, vaccine cards, prescriptions）
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── D Financial account information_金融账户信息       # 金融图像（Images of bank cards, bills, transaction records）
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── E Travel trajectory information_行踪轨迹信息        # 出行轨迹图像（Images of tickets, boarding passes, maps）
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    ├── F Property equipment information_财产设备信息        # 财产相关图像（Images of property documents, serial numbers, asset tags）
+    │   ├── ALL_images
+    │   ├── en_images
+    │   └── zh_images
+    └── G General Identity Information_通用身份信息         # 含姓名、地址、手机号等的文本截图或图像（Images containing names, addresses, phone numbers, etc.）
         ├── ALL_images
         ├── en_images
         └── zh_images
