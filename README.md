@@ -102,7 +102,7 @@ This dataset includes:
 
 ## 🔖 Entity Types
 * Definition of text privacy information entities:
-* 
+ 
 | Category | Entity Type     | Description                                      | Examples                                |
 |----------|-----------------|--------------------------------------------------|-----------------------------------------|
 | PERSON   | Name            | 姓名                                             | 张三, John Smith                        |
@@ -327,6 +327,7 @@ Email: xtsun@stu.xidian.edu.cn
     src="https://api.star-history.com/svg?repos=CyberChangAn/MutilPriv&type=Date"
   />
 </picture>
+
 
 
 
