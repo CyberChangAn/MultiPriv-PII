@@ -294,7 +294,7 @@ Below are the links to other datasets that we have referred to and referenced=
 If you use this dataset, please cite:
 
 ```bibtex
-@misc{your_dataset2025,
+@misc{MultiPriv,
   title={Multilingual and Multimodal Privacy Entity Dataset},
   author={CyberChangan},
   year={2025},
@@ -311,3 +311,4 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv&Date)
+
