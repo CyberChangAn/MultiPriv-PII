@@ -298,7 +298,7 @@ If you use this dataset, please cite:
   title={Multilingual and Multimodal Privacy Entity Dataset},
   author={CyberChangan},
   year={2025},
-  howpublished={\url{https://github.com/CyberChangAn/MutilPriv}}
+  howpublished={\url{https://github.com/CyberChangAn/MultilPriv-PII}}
 }
 ```
 
@@ -310,4 +310,4 @@ Email: xtsun@stu.xidian.edu.cn
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
