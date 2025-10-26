@@ -144,6 +144,24 @@ This dataset includes:
 | LLM Safety Alignment & Red Teaming       | 对齐训练、攻击模拟与响应拦截    |
 | Privacy-Preserving Text/Image Generation | 支持隐私脱敏的生成系统构建      |
 
+| 任务 (中文名称) | 说明 (应用场景描述) |
+| :--- | :--- |
+| PII 数据分类分级 | 依据敏感度、泄露风险和合规要求，对数据集和其中的 PII 实体进行定级与分类。 |
+| PII 命名实体识别 (通用) | 通用非结构化文本中识别和分类敏感实体（如姓名、地址、证件号等），是所有脱敏的基础。 |
+| 结构化数据 PII 脱敏/假名化 | 对数据库表格、交易记录等结构化数据的 PII 字段进行批量脱敏或假名化处理。 |
+| 文档图像 PII 遮蔽 | 通过 OCR 识别扫描文档、图片中的文本，并在图像上对 PII 区域进行像素级遮挡。 |
+| 差分隐私 (DP) 数据集生成 | 利用差分隐私技术，通过添加数学噪声，生成具有隐私保证的合成统计数据或模型训练数据。 |
+
+| 任务 (中文名称) | 说明 (应用场景描述) |
+| :--- | :--- |
+| LLM 隐私风险评估 | 评估模型对训练集中 PII 的记忆与复述能力，量化模型的隐私泄露风险。 |
+| LLM 安全对齐与红队模拟 | 对齐训练、攻击模拟与响应拦截，防止模型在恶意引导下生成或泄露 PII。 |
+| Prompt 隐私过滤与屏蔽 | 在 LLM 的输入输出（Prompt/Completion）中，实时识别 PII 并进行替换、删除或遮蔽。 |
+| 对话 PII 检测 | 专为口语化、非正式的客服聊天、通话转录等文本设计，用于模型输入前的清洗。 |
+| Multimodal 隐私识别 | 图文结合的隐私识别，识别跨模态数据中可能被 AI 滥用的隐私信息。 |
+| 对抗性 PII 泄露检测 | 检测模型在遭受模型逆向工程或成员推理攻击时，PII 是否被泄露。 |
+
+
 ## ⚙️ Format Specification
 
 - **Text**:
@@ -311,3 +329,4 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
+
