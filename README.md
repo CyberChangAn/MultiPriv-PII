@@ -55,33 +55,44 @@ This dataset includes:
 │   ├── data_person_1000_zh.json       # 包含1000条中文个人信息数据（1,000 personal data records in Chinese）
 │   ├── prompt_person_1000.json        # 针对个人数据的英文prompt集合（Prompts in English for personal data）
 │   └── prompt_person_1000_zh.json     # 针对个人数据的中文prompt集合（Prompts in Chinese for personal data）
-└── VLM                                # 与视觉语言模型相关的图像数据（VLM image-based dataset）
-    ├── A                              # 生物特征图像（Images of biometrics like face, iris, fingerprint）
-    │   └── ALL                        # 所有语言下的图像合集（All images combined）
-    ├── B                              # 身份凭证图像（Images of passports, ID cards, driver's licenses）
-    │   ├── ALL
-    │   ├── en                         # 英文环境下采集图像（Images with English content）
-    │   └── zh                         # 中文环境下采集图像（Images with Chinese content）
-    ├── C                              # 健康信息图像（Images of medical records, vaccine cards, prescriptions）
-    │   ├── ALL
-    │   ├── en
-    │   └── zh
-    ├── D                              # 金融图像（Images of bank cards, bills, transaction records）
-    │   ├── ALL
-    │   ├── en
-    │   └── zh
-    ├── E                              # 出行轨迹图像（Images of tickets, boarding passes, maps）
-    │   ├── all
-    │   ├── en
-    │   └── zh
-    ├── F                              # 财产相关图像（Images of property documents, serial numbers, asset tags）
-    │   ├── all
-    │   ├── en
-    │   └── zh
-    └── G                              # 含姓名、地址、手机号等的文本截图或图像（Images containing names, addresses, phone numbers, etc.）
-        ├── all
-        ├── en
-        └── zh
+├── VLM                                # 与视觉语言模型相关的图像数据（VLM image-based dataset）
+│   ├── A                              # 生物特征图像（Images of biometrics like face, iris, fingerprint）
+│   │   └── ALL                        # 所有语言下的图像合集（All images combined）
+│   ├── B                              # 身份凭证图像（Images of passports, ID cards, driver's licenses）
+│   │   ├── ALL
+│   │   ├── en                         # 英文环境下采集图像（Images with English content）
+│   │   └── zh                         # 中文环境下采集图像（Images with Chinese content）
+│   ├── C                              # 健康信息图像（Images of medical records, vaccine cards, prescriptions）
+│   │   ├── ALL
+│   │   ├── en
+│   │   └── zh
+│   ├── D                              # 金融图像（Images of bank cards, bills, transaction records）
+│   │   ├── ALL
+│   │   ├── en
+│   │   └── zh
+│   ├── E                              # 出行轨迹图像（Images of tickets, boarding passes, maps）
+│   │   ├── all
+│   │   ├── en
+│   │   └── zh
+│   ├── F                              # 财产相关图像（Images of property documents, serial numbers, asset tags）
+│   │   ├── all
+│   │   ├── en
+│   │   └── zh
+│   └── G                              # 含姓名、地址、手机号等的文本截图或图像（Images containing names, addresses, phone numbers, etc.）
+│       ├── all
+│       ├── en
+│       └── zh
+└───agent                              # 来自各大平台的隐私数据（Privacy data from major platforms）
+    ├── amazon
+    ├── booking
+    ├── email
+    ├── ins
+    ├── meituan_waimai
+    ├── rednote
+    ├── tiktok
+    ├── wechat
+    ├── whatsapp
+    └── xiecheng
 ```
 
 ### 📄 Text
