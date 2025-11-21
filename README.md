@@ -227,7 +227,6 @@ This dataset includes:
 
 ![image-20250803090743971](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803090743971.png)
 
-<img src="https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803091144721.png" alt="image-20250803091144721" style="zoom: 33%;" />
   ```
 
 ## 🛡️ Privacy & Ethics | 隐私与伦理声明
@@ -323,5 +322,6 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
+
 
 
