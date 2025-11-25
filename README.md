@@ -2,6 +2,9 @@
 
 多语言多模态 PII 实体与 Prompt 数据集 —— MultiPriv 数据集（面向大模型的隐私风险研究）
 
+[!] Due to the limitations of open-source certificates, attribute-level VLM images cannot be directly published in the repository. We will provide links to each image used in our dataset
+由于开源证书限制，属性级 VLM 图像无法直接公布在仓库里，我们会发我们数据集用到的每一张图片链接
+
 ## 📄 Papers
 
 - **MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
@@ -304,6 +307,7 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
+
 
 
 
