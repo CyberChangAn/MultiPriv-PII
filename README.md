@@ -286,12 +286,13 @@ Below are the links to other datasets that we have referred to and referenced=
 If you use this dataset, please cite:
 
 ```bibtex
-@misc{MultiPriv,
-  title={Multilingual and Multimodal Privacy Entity Dataset},
-  author={CyberChangan},
-  year={2025},
-  howpublished={\url{https://github.com/CyberChangAn/MultilPriv-PII}}
+@article{sun2025multipriv,
+  title={MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models},
+  author={Sun, Xiongtao and Li, Hui and Zhang, Jiaming and Yang, Yujie and others},
+  journal={arXiv preprint arXiv:2511.16940},
+  year={2025}
 }
+
 ```
 
 ## 📬 Contact | 联系方式
@@ -303,6 +304,7 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
+
 
 
 
