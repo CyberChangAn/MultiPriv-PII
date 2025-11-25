@@ -2,11 +2,16 @@
 
 多语言多模态 PII 实体与 Prompt 数据集 —— MultiPriv 数据集（面向大模型的隐私风险研究）
 
-The technical report is currently being written, including the specific details of the dataset, model testing, and references to other datasets.
-技术报告正在撰写中，包括数据集具体情况以及模型测试，和对其他数据集的引用。
+## 📄 Papers
 
-In the privacy entity files of Chinese text, there are duplicate name entities. This might be due to memory issues of LLMs. We will solve this problem in the next version. We are also handling the garbled text in some of the generated images.
-在中文文本隐私实体文件中，姓名实体存在重复，这可能是因为大模型记忆问题，我们会在下个版本解决这个问题。部分生成图片文字乱码，我们也在处理中。
+- **MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
+  *Our benchmark for privacy perception and privacy reasoning in VLMs.*  
+  [[arXiv]](https://arxiv.org/abs/2511.16940)
+
+- **DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
+  *Our privacy-protection framework for mobile MLLM agents.*  
+  [[arXiv]](https://arxiv.org/abs/2511.13248)
+
 
 ## 📖 Table of Contents | 目录
 
@@ -298,6 +303,7 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
+
 
 
 
