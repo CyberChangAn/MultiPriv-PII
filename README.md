@@ -8,13 +8,12 @@
 ## 📄 Papers
 
 - **MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
-  *Our benchmark for privacy perception and privacy reasoning in VLMs.*  
+  _Our benchmark for privacy perception and privacy reasoning in VLMs._  
   [[arXiv]](https://arxiv.org/abs/2511.16940)
 
 - **DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
-  *Our privacy-protection framework for mobile MLLM agents.*  
+  _Our privacy-protection framework for mobile MLLM agents._  
   [[arXiv]](https://arxiv.org/abs/2511.13248)
-
 
 ## 📖 Table of Contents | 目录
 
@@ -67,6 +66,14 @@ This dataset includes:
 │   └── person_*                       # 身份凭证图像（Images of passports, ID cards, driver's licenses）
 │       ├── *.png                      # images
 │       └── person_*.json              # metadata
+├── VLM
+│   ├── attribute-level                # 属性级隐私数据（Attribute-level privacy data）
+│   │   └── Publicly_available
+│   │       └── A-H
+│   └──individual-level
+│       └── person_*                   # 身份凭证图像（Images of passports, ID cards, driver's licenses）
+│           ├── *.png                  # images
+│           └── person_*.json          # metadata
 └───agent                              # 来自各大平台的隐私数据（Privacy data from major platforms）
     ├── amazon
     ├── booking
@@ -140,7 +147,6 @@ This dataset includes:
 | LLM Safety Alignment & Red Teaming       | 对齐训练、攻击模拟与响应拦截    |
 | Privacy-Preserving Text/Image Generation | 支持隐私脱敏的生成系统构建      |
 
-
 ## ⚙️ Format Specification
 
 - **Text**:
@@ -211,7 +217,6 @@ This dataset includes:
 - **Image annotations** (example):
 
 ![image-20250803090743971](https://starlookup-1259639797.cos.ap-chongqing.myqcloud.com/image-20250803090743971.png)
-
 
 ## 🛡️ Privacy & Ethics | 隐私与伦理声明
 
@@ -307,12 +312,3 @@ Email: xtsun@stu.xidian.edu.cn
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=CyberChangAn/MultiPriv-PII&type=Date)](https://www.star-history.com/#CyberChangAn/MultiPriv-PII&Date)
-
-
-
-
-
-
-
-
-
