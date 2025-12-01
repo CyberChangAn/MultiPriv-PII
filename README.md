@@ -9,11 +9,11 @@
 
 - **MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
   _Our benchmark for privacy perception and privacy reasoning in VLMs._  
-  [[arXiv]](https://arxiv.org/abs/2511.16940)
+  [arXiv](https://arxiv.org/abs/2511.16940)
 
 - **DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
   _Our privacy-protection framework for mobile MLLM agents._  
-  [[arXiv]](https://arxiv.org/abs/2511.13248)
+  [arXiv](https://arxiv.org/abs/2511.13248)
 
 ## 📖 Table of Contents | 目录
 
