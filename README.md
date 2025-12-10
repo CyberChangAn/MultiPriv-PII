@@ -62,10 +62,6 @@ This dataset includes:
 │   ├── data_person_1000_zh.json       # 包含1000条中文个人信息数据（1,000 personal data records in Chinese）
 │   ├── prompt_person_1000.json        # 针对个人数据的英文prompt集合（Prompts in English for personal data）
 │   └── prompt_person_1000_zh.json     # 针对个人数据的中文prompt集合（Prompts in Chinese for personal data）
-├── VLM                                # 与视觉语言模型相关的图像数据（VLM image-based dataset）
-│   └── person_*                       # 身份凭证图像（Images of passports, ID cards, driver's licenses）
-│       ├── *.png                      # images
-│       └── person_*.json              # metadata
 ├── VLM
 │   ├── attribute-level                # 属性级隐私数据（Attribute-level privacy data）
 │   │   └── Publicly_available
