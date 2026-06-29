@@ -7,11 +7,11 @@
 
 ## 📄 Papers
 
-- **MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
+- **[ICML 2026]MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
   _Our benchmark for privacy perception and privacy reasoning in VLMs._  
   [arXiv](https://arxiv.org/abs/2511.16940)
 
-- **DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
+- **[ECCV 2026]DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
   _Our privacy-protection framework for mobile MLLM agents._  
   [arXiv](https://arxiv.org/abs/2511.13248)
 
