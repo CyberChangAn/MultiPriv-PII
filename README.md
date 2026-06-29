@@ -5,13 +5,18 @@
 ❗Due to the limitations of open-source certificates, attribute-level VLM images cannot be directly published in the repository. We will provide links to each image used in our dataset
 由于开源证书限制，属性级 VLM 图像无法直接公布在仓库里，我们会整理我们数据集用到的每一张图片链接
 
+## 🎉 News
+
+- **[2026.06]** 🎊 Our **MultiPriv** has been accepted to **ICML 2026**, and **DualTAP** has been accepted to **ECCV 2026**!
+- **[Coming Soon]** 🚀 The **MultiPriv** dataset will be updated after our latest ongoing work is completed.
+
 ## 📄 Papers
 
-- **[ICML 2026]MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
+- **[ICML 2026] MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
   _Our benchmark for privacy perception and privacy reasoning in VLMs._  
   [arXiv](https://arxiv.org/abs/2511.16940)
 
-- **[ECCV 2026]DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
+- **[ECCV 2026] DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
   _Our privacy-protection framework for mobile MLLM agents._  
   [arXiv](https://arxiv.org/abs/2511.13248)
 
