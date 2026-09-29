@@ -12,6 +12,10 @@
 
 ## 📄 Papers
 
+- **[arxiv] What Does It Mean to Forget a Person? Individual-Level Unlearning in Vision-Language Models**  
+  _Our benchmark for individual-level multimodal unlearning in VLMs._  
+  [arXiv](https://arxiv.org/abs/2609.33481)
+
 - **[ICML 2026] MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
   _Our benchmark for privacy perception and privacy reasoning in VLMs._  
   [arXiv](https://arxiv.org/abs/2511.16940)
