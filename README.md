@@ -15,6 +15,7 @@
 - **[arxiv] What Does It Mean to Forget a Person? Individual-Level Unlearning in Vision-Language Models**  
   _Our benchmark for individual-level multimodal unlearning in VLMs._  
   [arXiv](https://arxiv.org/abs/2609.33481)
+  [github](https://github.com/CyberChangAn/IDUnlearn-Bench)
 
 - **[ICML 2026] MultiPriv: Benchmarking Individual-Level Privacy Reasoning in Vision-Language Models**  
   _Our benchmark for privacy perception and privacy reasoning in VLMs._  
@@ -23,7 +24,8 @@
 - **[ECCV 2026] DualTAP: A Dual-Task Adversarial Protector for Mobile MLLM Agents**  
   _Our privacy-protection framework for mobile MLLM agents._  
   [arXiv](https://arxiv.org/abs/2511.13248)
-
+  [github](https://github.com/fyzhang1/DualTAP)
+  
 ## 📖 Table of Contents | 目录
 
 <!--toc:start-->
